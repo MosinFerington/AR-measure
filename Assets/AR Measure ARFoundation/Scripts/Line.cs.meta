@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 878698d50adba1244a46dbc0c55799f9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - firstSelected: {instanceID: 0}
+  - secondSelected: {instanceID: 0}
+  - lineText: {instanceID: 0}
+  - linePrefab: {fileID: 4166060614258107126, guid: 127918599edcc3348a8289ebb79b5516,
+      type: 3}
+  - textPrefab: {fileID: 7569831249730123939, guid: 9dda3ead1abf36c4a85261c44ee3a3ea,
+      type: 3}
+  - lineInstance: {instanceID: 0}
+  - textInstance: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
