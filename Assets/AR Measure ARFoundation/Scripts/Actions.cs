@@ -12,29 +12,19 @@ using SimpleFileBrowser;
 
 public class Actions : MonoBehaviour
 {
-    public bool debugMode;
-
-    // This is the prefab that is selected by the user
+    // This is the prefab that is selected by the user.
     public GameObject selectedPrefab;
 
-    //these are the prefabs used in the game
     public GameObject pointPrefab;
     public GameObject linePrefab;
 
-    //these are the points that are chosen by the user
-    public GameObject firstSelected, secondSelected;
-
-    //used to store the points
-    List<GameObject> points;
+    private List<GameObject> points;
     
-    //the list of lines
-    List<GameObject> lines;
+    private List<GameObject> lines;
 
-    //the list of texts
-    List<GameObject> texts;
+    private List<GameObject> texts;
 
-    //history of elements that have been drawn
-    List<GameObject> historyGo;
+    private List<GameObject> historyGo;
 
     public GameObject[] selectors;
 
@@ -42,14 +32,13 @@ public class Actions : MonoBehaviour
 
     void Start()
     {
-        //initialize the variables
         points = new List<GameObject>();
         texts = new List<GameObject>();
         historyGo = new List<GameObject>();
         lines = new List<GameObject>();
         selectedPrefab = pointPrefab;
 
-        SelectPointer();
+        SelectPoint();
     }
 
     public void PerfromTouch(Vector2 vpress,Vector3 pos, Vector3 normal, GameObject hitObject)
@@ -109,7 +98,6 @@ public class Actions : MonoBehaviour
             lines.RemoveAt(lines.Count - 1);
         }
     }
-
 
     /// <summary>
     ///  SELECTION ACTIONS

@@ -134,6 +134,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6467140560590955432}
+        m_TargetAssemblyTypeName: Actions, Assembly-CSharp
+        m_MethodName: UITap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6467140559610107926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,7 +1046,7 @@ GameObject:
   - component: {fileID: 6467140560403567873}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: BlockableUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1085,7 +1097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1290,12 +1302,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779f3f36160a1b24ca824a622d7cb97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 0
   selectedPrefab: {fileID: 0}
   pointPrefab: {fileID: 5874012281675568346, guid: b12ceb2a7fbb86944a231a84d9c67d44, type: 3}
   linePrefab: {fileID: 4166060614258107126, guid: 127918599edcc3348a8289ebb79b5516, type: 3}
-  firstSelected: {fileID: 0}
-  secondSelected: {fileID: 0}
   selectors:
   - {fileID: 6467140559610107926}
   - {fileID: 6467140561154182841}
